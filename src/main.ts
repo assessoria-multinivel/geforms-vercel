@@ -18,6 +18,7 @@ async function bootstrap() {
     origin: 'https://fichaamericana.web.app',
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization'],
+    credentials: true,
   });
 
   console.log('NODE_ENV', process.env.NODE_ENV);
