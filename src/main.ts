@@ -15,7 +15,7 @@ async function bootstrap() {
 );
 
   app.enableCors({
-    origin: '*',
+    origin: 'https://fichaamericana.web.app',
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization'],
   });
