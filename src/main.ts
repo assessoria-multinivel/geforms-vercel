@@ -15,10 +15,11 @@ async function bootstrap() {
 );
 
   app.enableCors({
-    origin: '*',
+    origin: 'https://fichaamericana.web.app',
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: true,
+    optionsSuccessStatus: 200,
   });
 
   console.log('NODE_ENV', process.env.NODE_ENV);
